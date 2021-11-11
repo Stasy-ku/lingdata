@@ -1,0 +1,249 @@
+# sent_id = 23
+# text = Не можетъ онъ только найти завѣтнаго гостинца для меньшой, любимой дочери, аленькаго цвѣточка, краше котораго не было бы на бѣлóмъ свѣту.
+1	Не	не	PART	PART	Polarity=Neg	2	advmod	_	prereform=Не|modern=Не|oldlemma=не
+2	можетъ	мочь	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	prereform=можетъ|modern=может|oldlemma=может
+3	онъ	он	PRON	S-PRO,m,sg,3p=nom	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	prereform=онъ|modern=он|oldlemma=онъ
+4	только	только	PART	PART	_	5	advmod	_	prereform=только|modern=только|oldlemma=только
+5	найти	найти	VERB	V,pf,tran=inf,act	Aspect=Perf|VerbForm=Inf|Voice=Act	2	xcomp	_	prereform=найти|modern=найти|oldlemma=найти
+6	завѣтнаго	заветный	ADJ	A=m,sg,gen,plen	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	prereform=завѣтнаго|modern=заветного|oldlemma=завѣтный
+7	гостинца	гостинец	NOUN	S,m,inan=sg,gen	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	prereform=гостинца|modern=гостинца|oldlemma=гостинец
+8	для	для	ADP	PR	_	12	case	_	prereform=для|modern=для|oldlemma=для
+9	меньшой	меньшой	ADJ	A,sg=f,gen,plen	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	prereform=меньшой|modern=меньшой|oldlemma=меньший|SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	_	prereform=,|modern=,|oldlemma=,
+11	любимой	любимый	ADJ	A=f,sg,gen,plen	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	9	conj	_	prereform=любимой|modern=любимой|oldlemma=любимый
+12	дочери	дочь	NOUN	S,f,anim=sg,gen	Animacy=Anim|Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	prereform=дочери|modern=дочери|oldlemma=дочь|SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	_	prereform=,|modern=,|oldlemma=,
+14	аленькаго	аленький	ADJ	A=m,sg,gen,plen	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	15	amod	_	prereform=аленькаго|modern=аленького|oldlemma=аленький
+15	цвѣточка	цветочек	NOUN	S,m,inan=sg,gen	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	7	appos	_	prereform=цвѣточка|modern=цветочка|oldlemma=цвѣточек|SpaceAfter=No
+16	,	,	PUNCT	_	_	20	punct	_	prereform=,|modern=,|oldlemma=,
+17	краше	красивый	ADJ	A=comp	Degree=Cmp	20	nsubj	_	prereform=краше|modern=краше|oldlemma=краша
+18	котораго	который	PRON	A-PRO=m,sg,gen	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	17	obl	_	prereform=котораго|modern=которого|oldlemma=который
+19	не	не	PART	PART	Polarity=Neg	20	advmod	_	prereform=не|modern=не|oldlemma=не
+20	было	быть	AUX	V,ipf,intr,act=n,sg,praet,indic	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	15	acl:relcl	_	prereform=было|modern=было|oldlemma=быть
+21	бы	бы	AUX	PART	Mood=Cnd	20	aux	_	prereform=бы|modern=бы|oldlemma=бы
+22	на	на	ADP	PR	_	24	case	_	prereform=на|modern=на|oldlemma=на
+23	бѣлóмъ	белый	ADJ	A=m,sg,loc,plen	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	24	amod	_	prereform=бѣлóмъ|modern=белом|oldlemma=бѣлóм
+24	свѣту	свет	NOUN	S,m,inan=sg,loc	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	17	obl	_	prereform=свѣту|modern=свете|oldlemma=свѣт|SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	_	prereform=.|modern=.|oldlemma=.|SpacesAfter=\n\n~
+
+ОШИБКИ:
+
+1. (Не в определении родителя) Неверное определение падежей в 6	"завѣтнаго", 14	"аленькаго", 15 "цвѣточка" - должен был быть Acc вместо Gen.
+
+ПРИЧИНЫ ОШИБОК:
+
+1. Для 6 "завѣтнаго" причина, видимо, в архаичной форме слова. Для 14 "аленькаго" и 15 "цвѣточка" причина в том, что программа не понимает, что у слова "гостинца" и "цвѣточка" должен быть один падеж, а внешне "цвѣточка" выглядит именно как Gen.
+
+# sent_id = 24
+# text = Находилъ онъ во садахъ царскихъ, королевскихъ и султановыхъ много аленькихъ цвѣточковъ такой красоты, что ни въ сказкѣ сказать, ни перомъ написать; да никто ему поруки не даетъ, что краше того цвѣтка нѣтъ на бѣломъ светѣ; да и самъ онъ того не думаетъ.
+1	Находилъ	находить	VERB	V,ipf,tran=m,sg,act,praet,indic	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	prereform=Находилъ|modern=Находил|oldlemma=находить
+2	онъ	он	PRON	S-PRO,m,sg,3p=nom	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	prereform=онъ|modern=он|oldlemma=онъ
+3	во	во	ADP	PR	_	4	case	_	prereform=во|modern=во|oldlemma=в
+4	садахъ	сад	NOUN	S,m,inan=pl,loc	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	1	obl	_	prereform=садахъ|modern=садах|oldlemma=садах
+5	царскихъ	царский	ADJ	A=pl,loc,plen	Case=Loc|Degree=Pos|Number=Plur	4	amod	_	prereform=царскихъ|modern=царских|oldlemma=царский|SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	prereform=,|modern=,|oldlemma=,
+7	королевскихъ	королевский	ADJ	A=pl,loc,plen	Case=Loc|Degree=Pos|Number=Plur	5	conj	_	prereform=королевскихъ|modern=королевских|oldlemma=королевский
+8	и	и	CCONJ	CONJ	_	9	cc	_	prereform=и|modern=и|oldlemma=и
+9	султановыхъ	султанов	ADJ	A=pl,loc,plen	Case=Loc|Degree=Pos|Number=Plur	5	conj	_	prereform=султановыхъ|modern=султановых|oldlemma=султановый
+10	много	много	NUM	NUM=acc	Case=Acc|NumForm=Word|NumType=Card	4	nummod:gov	_	prereform=много|modern=много|oldlemma=много
+11	аленькихъ	аленький	ADJ	A=pl,gen,plen	Case=Gen|Degree=Pos|Number=Plur	12	amod	_	prereform=аленькихъ|modern=аленьких|oldlemma=аленький
+12	цвѣточковъ	цветочек	NOUN	S,m,inan=pl,gen	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	1	obj	_	prereform=цвѣточковъ|modern=цветочков|oldlemma=цвѣточков
+13	такой	такой	DET	A-PRO=f,sg,gen	Case=Gen|Gender=Fem|Number=Sing|PronType=Dem	14	det	_	prereform=такой|modern=такой|oldlemma=такой
+14	красоты	красота	NOUN	S,f,inan=sg,gen	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	prereform=красоты|modern=красоты|oldlemma=красота|SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	_	prereform=,|modern=,|oldlemma=,
+16	что	что	SCONJ	CONJ	_	19	mark	_	prereform=что|modern=что|oldlemma=что
+17	ни	ни	CCONJ	CONJ	Polarity=Neg	20	cc	_	prereform=ни|modern=ни|oldlemma=ни
+18	въ	в	ADP	PR	_	19	case	_	prereform=въ|modern=в|oldlemma=въ
+19	сказкѣ	сказка	NOUN	S,f,inan=sg,loc	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	20	obl	_	prereform=сказкѣ|modern=сказке|oldlemma=сказка
+20	сказать	сказать	VERB	V,pf,tran=inf,act	Aspect=Perf|VerbForm=Inf|Voice=Act	13	ccomp	_	prereform=сказать|modern=сказать|oldlemma=сказать|SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	_	prereform=,|modern=,|oldlemma=,
+22	ни	ни	CCONJ	CONJ	Polarity=Neg	24	cc	_	prereform=ни|modern=ни|oldlemma=ни
+23	перомъ	перо	NOUN	S,n,inan=sg,ins	Animacy=Inan|Case=Ins|Gender=Neut|Number=Sing	24	iobj	_	prereform=перомъ|modern=пером|oldlemma=перомъ
+24	написать	написать	VERB	V,pf,tran=inf,act	Aspect=Perf|VerbForm=Inf|Voice=Act	20	conj	_	prereform=написать|modern=написать|oldlemma=писать|SpaceAfter=No
+25	;	;	PUNCT	_	_	31	punct	_	prereform=;|modern=;|oldlemma=;
+26	да	да	CCONJ	PART	_	31	cc	_	prereform=да|modern=да|oldlemma=да
+27	никто	никто	PRON	S-PRO,sg=m,nom	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing|PronType=Neg	31	nsubj	_	prereform=никто|modern=никто|oldlemma=никто
+28	ему	он	PRON	S-PRO,m,sg,3p=dat	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	iobj	_	prereform=ему|modern=ему|oldlemma=он
+29	поруки	порука	NOUN	S,f,inan=sg,gen	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	31	obj	_	prereform=поруки|modern=поруки|oldlemma=порука
+30	не	не	PART	PART	Polarity=Neg	31	advmod	_	prereform=не|modern=не|oldlemma=не
+31	даетъ	давать	VERB	V,ipf,tran,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	prereform=даетъ|modern=даёт|oldlemma=даевать|SpaceAfter=No
+32	,	,	PUNCT	_	_	37	punct	_	prereform=,|modern=,|oldlemma=,
+33	что	что	SCONJ	CONJ	_	37	mark	_	prereform=что|modern=что|oldlemma=что
+34	краше	красивый	ADJ	A=comp	Degree=Cmp	37	nsubj	_	prereform=краше|modern=краше|oldlemma=краша
+35	того	тот	DET	S-PRO,n,sg=gen	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	36	det	_	prereform=того|modern=того|oldlemma=тот
+36	цвѣтка	цветок	NOUN	S,m,inan=sg,gen	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	34	obl	_	prereform=цвѣтка|modern=цветка|oldlemma=цвѣток
+37	нѣтъ	нет	VERB	PRAEDIC	Polarity=Neg	31	ccomp	_	prereform=нѣтъ|modern=нет|oldlemma=нѣтъ
+38	на	на	ADP	PR	_	40	case	_	prereform=на|modern=на|oldlemma=на
+39	бѣломъ	белый	ADJ	A=m,sg,loc,plen	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	40	amod	_	prereform=бѣломъ|modern=белом|oldlemma=бѣлый
+40	светѣ	свет	NOUN	S,m,inan=sg,loc	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	37	obl	_	prereform=светѣ|modern=свете|oldlemma=свет|SpaceAfter=No
+41	;	;	PUNCT	_	_	48	punct	_	prereform=;|modern=;|oldlemma=;
+42	да	да	CCONJ	PART	_	48	cc	_	prereform=да|modern=да|oldlemma=да
+43	и	и	CCONJ	CONJ	_	42	fixed	_	prereform=и|modern=и|oldlemma=и
+44	самъ	сам	DET	A-PRO=m,sg,nom	Case=Nom|Gender=Masc|Number=Sing|PronType=Emp	45	det	_	prereform=самъ|modern=сам|oldlemma=сам
+45	онъ	он	PRON	S-PRO,m,sg,3p=nom	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	48	nsubj	_	prereform=онъ|modern=он|oldlemma=онъ
+46	того	то	PRON	S-PRO,n,sg=gen	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	48	obj	_	prereform=того|modern=того|oldlemma=то
+47	не	не	PART	PART	Polarity=Neg	48	advmod	_	prereform=не|modern=не|oldlemma=не
+48	думаетъ	думать	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	37	conj	_	prereform=думаетъ|modern=думает|oldlemma=думать|SpaceAfter=No
+49	.	.	PUNCT	_	_	1	punct	_	prereform=.|modern=.|oldlemma=.~
+
+ОШИБКИ:
+1. 10 много - должно иметь родителя 12, а не 4. Т.к. относится к "цвѣточковъ".
+2. 16 что - должно иметь родителя 20, а не 19. В подчинительных конструкциях "что" зависит от глагола, а не от слова, зависимого от глагола.
+3. 48 думаетъ - должно иметь родителя 1, а не 37. (от "находил" отходят две связи к глаголам - к глаголу "даетъ" и к глаголу "думаетъ")
+
+ПРИЧИНЫ ОШИБОК:
+1. Слишком длинные и развернутые связи в первой части предложения до запятой.
+2. Определил родителя по ближайшему справа слову (не считая частиц и предлогов).
+3. Определил родителя по ближайшему глаголу (предик.) слева от запятой, много слов в предложении.
+
+# sent_id = 25
+# text = Вотъ ѣдетъ онъ путемъ-дорогою, со своими слугами вѣрными, по пескамъ сыпучіимъ, по лѣсамъ дремучіимъ, и откуда не возьмись налетѣли на него разбойники, бусурманскіе, турецкіе, да индѣйскіе, нехристи поганые, и увидя бѣду неминучую, бросаетъ честной купецъ свои караваны богатые со прислугою своей вѣрною, и бѣжитъ въ темны лѣса.
+1	Вотъ	вот	PART	PART	_	2	advmod	_	prereform=Вотъ|modern=Вот|oldlemma=вотъ
+2	ѣдетъ	ехать	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	prereform=ѣдетъ|modern=едет|oldlemma=ѣдетъ
+3	онъ	он	PRON	S-PRO,m,sg,3p=nom	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	prereform=онъ|modern=он|oldlemma=онъ
+4	путемъ	путь	NOUN	S,m,inan=sg,ins	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	2	obl	_	modern=<w><ana joined="hyphen"></ana>|oldlemma=путь|prereform=путемъ|modern=путём|oldlemma=путемъ|SpaceAfter=No
+5	-	-	PUNCT	_	_	6	punct	_	prereform=-|modern=-|oldlemma=-|SpaceAfter=No
+6	дорогою	дорога	NOUN	S,f,inan=sg,ins	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	4	appos	_	modern=<w><ana joined="hyphen"></ana>|oldlemma=дорога|prereform=дорогою|modern=дорогою|oldlemma=дорога|SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	_	prereform=,|modern=,|oldlemma=,
+8	со	со	ADP	PR	_	10	case	_	prereform=со|modern=со|oldlemma=с
+9	своими	свой	DET	A-PRO=pl,ins	Case=Ins|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	10	det	_	prereform=своими|modern=своими|oldlemma=свой
+10	слугами	слуга	NOUN	S,m,anim=pl,ins	Animacy=Anim|Case=Ins|Gender=Masc|Number=Plur	2	obl	_	prereform=слугами|modern=слугами|oldlemma=слуга
+11	вѣрными	верный	ADJ	A=pl,ins,plen	Case=Ins|Degree=Pos|Number=Plur	10	amod	_	prereform=вѣрными|modern=верными|oldlemma=вѣрный|SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	_	Modern=SkipPunct|oldlemma=,
+13	по	по	ADP	PR	_	14	case	_	prereform=по|modern=по|oldlemma=по
+14	пескамъ	песок	NOUN	S,m,inan=pl,dat	Animacy=Inan|Case=Dat|Gender=Masc|Number=Plur	2	obl	_	prereform=пескамъ|modern=пескам|oldlemma=песок
+15	сыпучіимъ	сыпучий	ADJ	A=pl,dat,plen=anom	Case=Dat|Degree=Pos|Number=Plur	14	amod	_	prereform=сыпучіимъ|modern=сыпучиим|oldlemma=сыпучіимый|SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	_	prereform=,|modern=,|oldlemma=,
+17	по	по	ADP	PR	_	18	case	_	prereform=по|modern=по|oldlemma=по
+18	лѣсамъ	лес	NOUN	S,m,inan=pl,dat	Animacy=Inan|Case=Dat|Gender=Masc|Number=Plur	14	conj	_	prereform=лѣсамъ|modern=лесам|oldlemma=лѣс
+19	дремучіимъ	дремучий	ADJ	A=pl,dat,plen=anom	Case=Dat|Degree=Pos|Number=Plur	18	amod	_	prereform=дремучіимъ|modern=дремучиим|oldlemma=дремучіимый|SpaceAfter=No
+20	,	,	PUNCT	_	_	25	punct	_	prereform=,|modern=,|oldlemma=,
+21	и	и	CCONJ	CONJ	_	25	cc	_	prereform=и|modern=и|oldlemma=и
+22	откуда	откуда	ADV	ADV-PRO	Degree=Pos|PronType=Rel	25	advmod	_	prereform=откуда|modern=откуда|oldlemma=откуда
+23	не	ни	PART	PART	Polarity=Neg	24	advmod	_	prereform=не|modern=ни|oldlemma=не
+24	возьмись	взяться	VERB	V,pf,intr,med=sg,2p,imper	Aspect=Perf|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Mid	25	advcl	_	prereform=возьмись|modern=возьмись|oldlemma=возьмиться
+25	налетѣли	налететь	VERB	V,pf,intr,act=pl,praet,indic	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	prereform=налетѣли|modern=налетели|oldlemma=налетѣть
+26	на	на	ADP	PR	_	27	case	_	prereform=на|modern=на|oldlemma=на
+27	него	он	PRON	S-PRO,m,sg,3p=acc	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	obl	_	prereform=него|modern=него|oldlemma=он
+28	разбойники	разбойник	NOUN	S,m,anim=pl,nom	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	25	nsubj	_	prereform=разбойники|modern=разбойники|oldlemma=разбойник|SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	_	prereform=,|modern=,|oldlemma=,
+30	бусурманскіе	бусурманский	ADJ	A=pl,nom,plen	Case=Nom|Degree=Pos|Number=Plur	28	amod	_	prereform=бусурманскіе|modern=бусурманские|oldlemma=бусурманский|SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	_	prereform=,|modern=,|oldlemma=,
+32	турецкіе	турецкий	ADJ	A=pl,nom,plen	Case=Nom|Degree=Pos|Number=Plur	30	conj	_	prereform=турецкіе|modern=турецкие|oldlemma=турецкий|SpaceAfter=No
+33	,	,	PUNCT	_	_	35	punct	_	Modern=SkipPunct|oldlemma=,
+34	да	да	CCONJ	CONJ	_	35	cc	_	prereform=да|modern=да|oldlemma=да
+35	индѣйскіе	индейский	ADJ	A=pl,nom,plen	Case=Nom|Degree=Pos|Number=Plur	30	conj	_	prereform=индѣйскіе|modern=индейские|oldlemma=индѣйский|SpaceAfter=No
+36	,	,	PUNCT	_	_	37	punct	_	prereform=,|modern=,|oldlemma=,
+37	нехристи	нехристь	NOUN	S,m,anim=pl,nom	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	28	appos	_	prereform=нехристи|modern=нехристи|oldlemma=нехристи
+38	поганые	поганый	ADJ	A=pl,nom,plen	Case=Nom|Degree=Pos|Number=Plur	37	amod	_	prereform=поганые|modern=поганые|oldlemma=поганый|SpaceAfter=No
+39	,	,	PUNCT	_	_	45	punct	_	prereform=,|modern=,|oldlemma=,
+40	и	и	CCONJ	CONJ	_	45	cc	_	prereform=и|modern=и|oldlemma=и
+41	увидя	увидеть	VERB	V,pf,tran=ger,act,praet=anom	Aspect=Perf|Tense=Past|VerbForm=Conv|Voice=Act	45	advcl	_	prereform=увидя|modern=увидя|oldlemma=увидеть
+42	бѣду	беда	NOUN	S,f,inan=sg,acc	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	41	obj	_	prereform=бѣду|modern=беду|oldlemma=бѣда
+43	неминучую	неминучий	ADJ	A=f,sg,acc,plen	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	42	amod	_	prereform=неминучую|modern=неминучую|oldlemma=неминучий|SpaceAfter=No
+44	,	,	PUNCT	_	_	41	punct	_	prereform=,|modern=,|oldlemma=,
+45	бросаетъ	бросать	VERB	V,ipf,tran=sg,act,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	prereform=бросаетъ|modern=бросает|oldlemma=бросаесть
+46	честной	честной	ADJ	A=m,sg,nom,plen	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	47	amod	_	prereform=честной|modern=честной|oldlemma=честный
+47	купецъ	купец	NOUN	S,m,anim=sg,nom	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	45	nsubj	_	prereform=купецъ|modern=купец|oldlemma=купецъ
+48	свои	свой	DET	A-PRO=pl,acc,inan	Animacy=Inan|Case=Acc|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	49	det	_	prereform=свои|modern=свои|oldlemma=свой
+49	караваны	караван	NOUN	S,m,inan=pl,acc	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	45	obj	_	prereform=караваны|modern=караваны|oldlemma=караван
+50	богатые	богатый	ADJ	A=pl,acc,inan,plen	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	49	amod	_	prereform=богатые|modern=богатые|oldlemma=богатый
+51	со	со	ADP	PR	_	52	case	_	prereform=со|modern=со|oldlemma=с
+52	прислугою	прислуга	NOUN	S,f,anim=sg,ins	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	49	nmod	_	prereform=прислугою|modern=прислугою|oldlemma=прислуга
+53	своей	свой	DET	A-PRO=f,sg,ins	Case=Ins|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	52	det	_	prereform=своей|modern=своей|oldlemma=свой
+54	вѣрною	верный	ADJ	A=f,sg,ins,plen	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	52	amod	_	prereform=вѣрною|modern=верною|oldlemma=вѣрный|SpaceAfter=No
+55	,	,	PUNCT	_	_	57	punct	_	Modern=SkipPunct|oldlemma=,
+56	и	и	CCONJ	CONJ	_	57	cc	_	prereform=и|modern=и|oldlemma=и
+57	бѣжитъ	бежать	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	45	conj	_	prereform=бѣжитъ|modern=бежит|oldlemma=бѣжиать
+58	въ	в	ADP	PR	_	60	case	_	prereform=въ|modern=в|oldlemma=въ
+59	темны	темный	ADJ	A=pl,brev	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur|Variant=Short	60	amod	_	prereform=темны|modern=темны|oldlemma=темн
+60	лѣса	лес	NOUN	S,m,inan=pl,acc	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	57	obl	_	prereform=лѣса|modern=леса|oldlemma=лѣс|SpaceAfter=No
+61	.	.	PUNCT	_	_	2	punct	_	prereform=.|modern=.|oldlemma=.~
+
+ОШИБКИ:
+1. 57 бѣжитъ - должно иметь родителя 2, а не 45. Бѣжитъ и бросаетъ оба зависимы от ѣдетъ.
+2. 22 откуда - должно иметь родителя 24, а не 25.
+
+ПРИЧИНЫ ОШИБОК:
+1. Определил родителя по ближайшему слева глаголу.
+2. Программа не знает устойчивого сочетания "откуда ни возьмись" и поэтому разбивает его.
+
+# sent_id = 26
+# text = «Пусть-де меня разтерзаютъ звѣри лютые, чѣмъ попасться мнѣ въ руки разбойничьи, поганыя и доживать свой вѣкъ въ плѣну во неволѣ».
+1	«	«	PUNCT	_	_	6	punct	_	prereform=«|modern=«|oldlemma=«|SpaceAfter=No
+2	Пусть	пусть	SCONJ	CONJ	_	6	mark	_	modern=<w><ana joined="hyphen"></ana>|oldlemma=пусть|prereform=Пусть|modern=Пусть|oldlemma=пусть|SpaceAfter=No
+3	-	-	PUNCT	_	_	4	punct	_	prereform=-|modern=-|oldlemma=-|SpaceAfter=No
+4	де	де	PART	PART	_	6	discourse	_	modern=<w><ana joined="hyphen"></ana>|oldlemma=де|prereform=де|modern=де|oldlemma=де
+5	меня	я	PRON	S-PRO,sg,1p=acc	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	obj	_	prereform=меня|modern=меня|oldlemma=я
+6	разтерзаютъ	растерзать	VERB	V,pf,tran=pl,act,fut,3p,indic	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	prereform=разтерзаютъ|modern=растерзают|oldlemma=разтерзаютъ
+7	звѣри	зверь	NOUN	S,m,anim=pl,nom	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	prereform=звѣри|modern=звери|oldlemma=звѣрь
+8	лютые	лютый	ADJ	A=pl,nom,plen	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	prereform=лютые|modern=лютые|oldlemma=лютой|SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	_	prereform=,|modern=,|oldlemma=,
+10	чѣмъ	чем	SCONJ	CONJ	_	11	mark	_	prereform=чѣмъ|modern=чем|oldlemma=чѣмъ
+11	попасться	попасться	VERB	V,pf,intr,med=inf	Aspect=Perf|VerbForm=Inf|Voice=Mid	6	advcl	_	prereform=попасться|modern=попасться|oldlemma=попасться
+12	мнѣ	я	PRON	S-PRO,sg,1p=dat	Case=Dat|Number=Sing|Person=1|PronType=Prs	14	iobj	_	prereform=мнѣ|modern=мне|oldlemma=я
+13	въ	в	ADP	PR	_	14	case	_	prereform=въ|modern=в|oldlemma=въ
+14	руки	рука	NOUN	S,f,inan=pl,acc	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	11	obl	_	prereform=руки|modern=руки|oldlemma=рука
+15	разбойничьи	разбойничий	ADJ	A=pl,acc,inan,plen	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	14	amod	_	prereform=разбойничьи|modern=разбойничьи|oldlemma=разбойничий|SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	_	prereform=,|modern=,|oldlemma=,
+17	поганыя	поганый	ADJ	A=pl,acc,inan,plen	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	15	conj	_	prereform=поганыя|modern=поганые|oldlemma=поганый
+18	и	и	CCONJ	CONJ	_	19	cc	_	prereform=и|modern=и|oldlemma=и
+19	доживать	доживать	VERB	V,ipf,tran=inf,act	Aspect=Imp|VerbForm=Inf|Voice=Act	11	conj	_	prereform=доживать|modern=доживать|oldlemma=доживать
+20	свой	свой	DET	A-PRO=m,sg,acc,inan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	21	det	_	prereform=свой|modern=свой|oldlemma=свой
+21	вѣкъ	век	NOUN	S,m,inan=sg,acc	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	19	obj	_	prereform=вѣкъ|modern=век|oldlemma=вѣк
+22	въ	в	ADP	PR	_	23	case	_	prereform=въ|modern=в|oldlemma=въ
+23	плѣну	плен	NOUN	S,m,inan=sg,loc2	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	19	obl	_	prereform=плѣну|modern=плену|oldlemma=плѣна
+24	во	во	ADP	PR	_	25	case	_	prereform=во|modern=во|oldlemma=в
+25	неволѣ	неволя	NOUN	S,f,inan=sg,loc	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	19	obl	_	prereform=неволѣ|modern=неволе|oldlemma=неволя|SpaceAfter=No
+26	»	»	PUNCT	_	_	6	punct	_	prereform=»|modern=»|oldlemma=»|SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	_	prereform=.|modern=.|oldlemma=.|SpacesAfter=\n\n~
+
+ОШИБКИ:
+1. 12 мнѣ - должно иметь родителя 11, а не 14. Т.к. относится к "попасться".
+
+ПРИЧИНЫ ОШИБОК:
+1. Программа считывает ближайшее слово справа, а не слева.
+
+
+# sent_id = 27
+# text = Бродитъ онъ по тому лѣсу дремучему, непроѣздному, непроходному, и что дальше идетъ, то дорога лучше становится, словно деревья передъ нимъ разступаются, а часты кусты раздвигаются.
+1	Бродитъ	бродить	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	prereform=Бродитъ|modern=Бродит|oldlemma=бродить
+2	онъ	он	PRON	S-PRO,m,sg,3p=nom	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	prereform=онъ|modern=он|oldlemma=онъ
+3	по	по	ADP	PR	_	5	case	_	prereform=по|modern=по|oldlemma=по
+4	тому	тот	DET	A-PRO=m,sg,dat	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	prereform=тому|modern=тому|oldlemma=тот
+5	лѣсу	лес	NOUN	S,m,inan=sg,dat	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	1	obl	_	prereform=лѣсу|modern=лесу|oldlemma=лѣс
+6	дремучему	дремучий	ADJ	A=m,sg,dat,plen	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	prereform=дремучему|modern=дремучему|oldlemma=дремучий|SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	_	prereform=,|modern=,|oldlemma=,
+8	непроѣздному	непроездной	ADJ	A=m,sg,dat,plen	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	6	conj	_	prereform=непроѣздному|modern=непроездному|oldlemma=непроѣздный|SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	_	prereform=,|modern=,|oldlemma=,
+10	непроходному	непроходной	ADJ	A=m,sg,dat,plen	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	6	conj	_	prereform=непроходному|modern=непроходному|oldlemma=непроходный|SpaceAfter=No
+11	,	,	PUNCT	_	_	20	punct	_	prereform=,|modern=,|oldlemma=,
+12	и	и	CCONJ	CONJ	_	20	cc	_	prereform=и|modern=и|oldlemma=и
+13	что	что	SCONJ	CONJ	_	15	mark	_	prereform=что|modern=что|oldlemma=что
+14	дальше	далеко	ADV	ADV=comp	Degree=Cmp	15	advmod	_	prereform=дальше|modern=дальше|oldlemma=далеко
+15	идетъ	идти	VERB	V,ipf,intr,act=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	advcl	_	prereform=идетъ|modern=идёт|oldlemma=идет|SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	_	prereform=,|modern=,|oldlemma=,
+17	то	то	SCONJ	CONJ	_	20	mark	_	prereform=то|modern=то|oldlemma=то
+18	дорога	дорога	NOUN	S,f,inan=sg,nom	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	20	nsubj	_	prereform=дорога|modern=дорога|oldlemma=дорога
+19	лучше	хороший	ADJ	A=comp	Degree=Cmp	20	xcomp	_	prereform=лучше|modern=лучше|oldlemma=хорошо
+20	становится	становиться	VERB	V,ipf,intr,med=sg,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	1	conj	_	prereform=становится|modern=становится|oldlemma=становиться|SpaceAfter=No
+21	,	,	PUNCT	_	_	26	punct	_	Modern=SkipPunct|oldlemma=,
+22	словно	словно	SCONJ	CONJ	_	26	mark	_	prereform=словно|modern=словно|oldlemma=словно
+23	деревья	дерево	NOUN	S,n,inan=pl,nom	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	26	nsubj	_	prereform=деревья|modern=деревья|oldlemma=дерево
+24	передъ	перед	ADP	PR	_	25	case	_	prereform=передъ|modern=перед|oldlemma=перед
+25	нимъ	он	PRON	S-PRO,m,sg,3p=ins	Case=Ins|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obl	_	prereform=нимъ|modern=ним|oldlemma=они
+26	разступаются	расступаться	VERB	V,ipf,intr,med=pl,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	20	advcl	_	prereform=разступаются|modern=расступаются|oldlemma=разступаться|SpaceAfter=No
+27	,	,	PUNCT	_	_	31	punct	_	prereform=,|modern=,|oldlemma=,
+28	а	а	CCONJ	CONJ	_	31	cc	_	prereform=а|modern=а|oldlemma=а
+29	часты	частый	ADJ	A=pl,brev	Case=Nom|Degree=Pos|Number=Plur|Variant=Short	30	amod	_	prereform=часты|modern=часты|oldlemma=частый
+30	кусты	куст	NOUN	S,m,inan=pl,nom	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	31	nsubj	_	prereform=кусты|modern=кусты|oldlemma=куст
+31	раздвигаются	раздвигаться	VERB	V,ipf,intr,med=pl,praes,3p,indic	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	26	conj	_	prereform=раздвигаются|modern=раздвигаются|oldlemma=раздвигаться|SpaceAfter=No
+32	.	.	PUNCT	_	_	1	punct	_	prereform=.|modern=.|oldlemma=.~
+
+ОШИБКИ:
+1. 20 становится - должно иметь родителя 15, а не 1; 15	идетъ - должно иметь родителя 1, а не 20. 
+2. 11 , 12 и - должно иметь родителя 15, а не 20.
+3. 16 , - должно иметь родителя 20, а не 15.
+
+ПРИЧИНЫ ОШИБОК:
+1.2.3. Программма не понимает архаичной конструкции "что"...,"то" со значением "чем"...,"чем".
